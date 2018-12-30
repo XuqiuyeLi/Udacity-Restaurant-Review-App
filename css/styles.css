@@ -265,7 +265,7 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 
-.inside header {
+.restaurant-detail header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -273,7 +273,7 @@ nav h1 a {
 }
 
 
-.inside #map-container {
+.restaurant-detail #map-container {
   background: blue none repeat scroll 0 0;
   height: 87%;
   position: fixed;
@@ -283,14 +283,14 @@ nav h1 a {
 }
 
 
-.inside #map {
+.restaurant-detail #map {
   background-color: #ccc;
   height: 100%;
   width: 100%;
 }
 
 
-.inside #footer {
+.restaurant-detail #footer {
   bottom: 0;
   position: absolute;
   width: 50%;
@@ -418,15 +418,15 @@ nav h1 a {
     max-width: 100%;
   }
   
-  .inside {
+  .restaurant-detail {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    width: 100vw
   }
 
-  .inside header {
+  .restaurant-detail header {
+    width: 100%;
     order: 0;
-    width: 100vw;
   }
 
   header {
@@ -439,43 +439,41 @@ nav h1 a {
     }
 
     header #breadcrumb {
+      width: 100%;
       order: 1;
-      width: 100vw;
-      padding-right: 0;
-      padding-left: 0;
+      padding-right: 10px;
+      padding-left: 10px;
       text-align: center;
     }
 
-  .inside #map-container {
+  .restaurant-detail #map-container {
+    width: 100%;
     top: 130px;
     position: relative;
     height: 300px;
-    width: 100vw;
   }
 
-  .inside #restaurant-container {
+  .restaurant-detail #restaurant-container {
+    width: 100%;
     position: relative;
-    width: 100vw;
-    padding: 140px 5px 0 0;
+    padding: 140px 10px 0 0;
     margin: auto;
     text-align: center;
   }
 
-  .inside #reviews-container {
-    width: 100vw;
+  .restaurant-detail #reviews-container {
+    width: 100%;
     padding: 5px;
     margin: auto;
   }
 
-  .inside #footer {
-    width: 100vw;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 10px;
+  .restaurant-detail #footer {
+    width: 100%;
+    padding: 10px 10px 0 0;
   }
 
   #reviews-list {
-    width: 100vw;
+    width: 100%;
   }
   
   #reviews-container h2 {
@@ -485,7 +483,7 @@ nav h1 a {
 
 @media only screen and (min-width: 750px) {
   #restaurants-list li {
-    max-width: 45%;
+    max-width: 50%;
   }
 }
 
