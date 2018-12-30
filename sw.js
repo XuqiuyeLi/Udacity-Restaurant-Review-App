@@ -27,11 +27,11 @@ let urlsToCache = [
  */
 
 self.addEventListener('install', function(event) {
-  console.log('SW is installed');
+  console.log('ServiceWorker is installed');
 
   event.waitUntil(
     caches.open(staticCacheName).then(function(cache) {
-      console.log('SW is caching');
+      console.log('ServiceWorker is caching');
       return cache.addAll(urlsToCache);
     })
   );
@@ -50,7 +50,7 @@ self.addEventListener('activate', function(event) {
           return cache.delete(cacheName);
         })
       ).then(function() {
-        console.log('SW is activated');
+        console.log('ServiceWorker is activated');
       });
     })
   );
